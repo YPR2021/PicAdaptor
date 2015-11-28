@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context="com.yangpeiru.picadaptor.MainActivity">
+
+    <!--rlRatio,自定义属性后,就要自己在这里设置宽高比和相对与谁计算-->
+    <com.yangpeiru.picadaptorlibrary.PicAdaptorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:rlRatio="2.43"
+        app:rlRelative="width">
+
+        <ImageView
+            android:id="@+id/main_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+    </com.yangpeiru.picadaptorlibrary.PicAdaptorLayout>
+</FrameLayout>
