@@ -1,13 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerVertical="true"
-    tools:context="com.yangpeiru.picadaptor.MainActivity">
-
+## PicAdaptor
+图片适配器,让PicAdaptorLayout这个类在xml中包裹住想要适配的ImageView,
+设置一些通常的属性就可以了.对外提供了设置宽高比和相对于谁计算宽高的方法.也可以直接在xml中修改
+eg:
+```java
     <!--rlRatio,可以自己在这里设置宽高比和相对与谁计算-->
     <com.yangpeiru.picadaptorlibrary.PicAdaptorLayout
         android:layout_width="match_parent"
@@ -23,4 +18,4 @@
             android:src="@mipmap/ic_launcher"/>
 
     </com.yangpeiru.picadaptorlibrary.PicAdaptorLayout>
-</FrameLayout>
+```
