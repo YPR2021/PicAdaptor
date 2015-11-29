@@ -66,7 +66,7 @@ public class PicAdaptorLayout
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);//获得高的模式
 
         //TODO: 1.已知 宽度确定的值，宽高的一个比例,计算出高度，对孩子的宽高产生一个期望
-        //拿到模式后,判断模式是不是精确值,并且宽高比不等于0(不等于0的意思就是有宽高比),达成第一中方式条目
+        //拿到模式后,判断模式是不是精确值,并且宽高比不等于0(不等于0的意思就是有宽高比),达成第一种方式条目
         if (widthMode == MeasureSpec.EXACTLY && mRatio != 0 && mRelative == RELATIVE_WIDTH) {//EXACTLY:精确的
             //计算高度,给孩子(ImageView)一个期望值
             float height = widthSelf / mRatio;//获得高
