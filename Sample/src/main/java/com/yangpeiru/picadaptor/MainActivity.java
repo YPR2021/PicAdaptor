@@ -30,7 +30,7 @@ public class MainActivity
                            R.mipmap.recommend_48,
                            R.mipmap.recommend_49,
                            R.mipmap.recommend_50,};
-    private ImageView     mIvPic;
+
     private List<Integer> mDatas;
 
     @Override
